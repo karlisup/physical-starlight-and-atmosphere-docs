@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Fog - starlightDocs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Fog";
+    var mkdocs_page_input_path = "fog.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> starlightDocs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gallery/">Showcase</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Getting Started</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../installation/">Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../interface/">User Interface</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Fog</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#how-to-add-fog">How to add Fog?</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Support</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../issues/">Known Issues</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../faq/">FAQ</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../contact/">Contact</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">starlightDocs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Getting Started &raquo;</li>
+        
+      
+    
+    <li>Fog</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="how-to-add-fog">How to add Fog?</h3>
+<p>The "SkylightAtmosphere" is a universal node, it also works on object materials. All you need to do is to add the node group in your Object Shader Node tree just before the Material Output.</p>
+<p><strong><em>NOTE: right now adding the fog to your materials is completely manual. In next releases I'll automate the process of adding and removing the fog.</em></strong></p>
+<p>Here is how:</p>
+<ul>
+<li>Select your object and material you would like to add the fog to. Open the Shader Node Editor.</li>
+</ul>
+<p><img alt="FOG" src="../img/fog/FOG_nofog.PNG" /></p>
+<ul>
+<li>Select Add/Group/StarlightAtmosphere and insert just before Material Output of your shader, like shown in the image. It will connect the "sockets" automatically.</li>
+</ul>
+<p><img alt="FOG" src="../img/fog/FOG_add_fog.PNG" /></p>
+<ul>
+<li>Now you have fog! Change the Atmosphere parameters to see the immediate results.</li>
+</ul>
+<p><img alt="FOG" src="../img/fog/FOG_fog.PNG" /></p>
+<ul>
+<li>"Atmosphere Density", "Distance Scalar" and "Falloff" has the most apparent impact on the fog.</li>
+</ul>
+<p><img alt="FOG" src="../img/fog/FOG_bigfog.PNG" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../issues/" class="btn btn-neutral float-right" title="Known Issues">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../interface/" class="btn btn-neutral" title="User Interface"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../interface/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../issues/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

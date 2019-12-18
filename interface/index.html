@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>User Interface - starlightDocs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "User Interface";
+    var mkdocs_page_input_path = "interface.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> starlightDocs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gallery/">Showcase</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Getting Started</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../installation/">Installation</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">User Interface</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#part-1-getting-started">Part 1: Getting started</a></li>
+    
+
+    <li class="toctree-l3"><a href="#part-2-sun">Part 2: Sun</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#sun-position">Sun Position</a></li>
+        
+            <li><a class="toctree-l4" href="#sun-visibility">Sun Visibility</a></li>
+        
+            <li><a class="toctree-l4" href="#sun-disk">Sun Disk</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../fog/">Fog</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Support</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../issues/">Known Issues</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../faq/">FAQ</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../contact/">Contact</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">starlightDocs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Getting Started &raquo;</li>
+        
+      
+    
+    <li>User Interface</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="part-1-getting-started">Part 1: Getting started</h3>
+<p>Once installation is complete, you are set! </p>
+<ul>
+<li>The "Physical Atmosphere" tab is now in the sidebar of Blender 3D viewport ("N" key)
+Click on the "Physical Atmosphere" tab and you'll see this: </li>
+</ul>
+<p><img alt="GUI" src="../img/UI/UI_default.PNG" /></p>
+<ul>
+<li>Now enable it by ticking the uppermost checkbox "Atmosphere". To see the sky, you have to be in "Rendered" Viewport Shading mode (click on the 4th sphere in the list up in the right corner of 3D viewport)</li>
+</ul>
+<p><img alt="GUI_enabled" src="../img/UI/UI_enabled.PNG" /></p>
+<p><strong>Now before we move on, I'll explain what the addon just did by pressing the checkbox.</strong></p>
+<ul>
+<li>It replaced the default world shader node with "StarlightAtmosphere" node. When you grey out the "Atmosphere" checkbox, it will again set it back to default world.</li>
+<li>It added a Sun lamp. The Sun lamp is used as the main light source to cast shadows from the Sun. When you grey out the "Atmosphere" checkbox, it will remove the Sun.</li>
+</ul>
+<p>You are now greeted by this list of variables to play with. Take a deep breath and have a look at those. It has fancy names like Kelvins, radiance, and absorption, but I use those to somehow standartize the variables. Other softwares and scientific tools use similar naming. Also, few of these will be soon replaced with more artist-friendly variables.</p>
+<p><strong><em>TIP: hover your mouse cursor over the variables and press Delete to reset the value to its default</em></strong></p>
+<p><img alt="GUI_tools" src="../img/UI/UI_tools.PNG" /></p>
+<h3 id="part-2-sun">Part 2: Sun</h3>
+<p>Sun is controlled by these 7 variables:</p>
+<p><img alt="GUI_sun" src="../img/UI/UI_sun.PNG" /></p>
+<ul>
+<li>Sun Azimuth</li>
+<li>Sun Elevation</li>
+<li>Sun Disk checkbox</li>
+<li>Sun Lamp checkbox</li>
+<li>Sun Angular Diameter</li>
+<li>Sun Temperature K</li>
+<li>Sun Radiance Intensity</li>
+</ul>
+<h5 id="sun-position">Sun Position</h5>
+<p>Sun position in the sky is controlled by the first two variables - Azimuth and Elevation. Azimuth moves the Sun horizontally, elevation - vertically. The values are angle in degrees. Default is 0.0 and 0.0 which puts the sun exactly at horizon in +Y direction. For now this is the only proper option how to change the Sun position. </p>
+<p><strong><em>NOTE: in next releases it'll allow user to move the Sun lamp and thus change the shader parameters in two-way manner. Also I'll add the support for Sun-Position addon and</em></strong></p>
+<h5 id="sun-visibility">Sun Visibility</h5>
+<p>Now the next two parameters might seem confusing for some.</p>
+<ul>
+<li>Sun Disk checkbox, toggles the visibility of the sun disk in the sky. </li>
+<li>Sun Lamp checkbox, toggles the Sun Lamp intensity. </li>
+</ul>
+<p>I'll explain why these parameters can be useful. There are few specific cases where you don't want to see the Sun disk visible in the sky or don't want your scene illuminated by a parametric lamp. For example if you use Cycles, you can avoid using a parametric Sun Lamp and use the addon as HDRI.</p>
+<ul>
+<li>By disabling both, you get illumination by the sky only. No direct light.</li>
+<li>Sun disk enabled and Sun Lamp disabled, you essentially get a HDRI. Switch to Cycles and you will see how the Sun Disk is a light source - you get shadows.</li>
+<li>Sun disk disabled and Sun Lamp enabled, you have shadows and direct light, but the sun disk will not be visible in the sky. (can't think of a useful case for this setting)</li>
+<li>Both enabled - you have both, direct light and sun disk in the sky. </li>
+</ul>
+<p>If you compare Cycles renders with Sun Lamp enabled and Sun Lamp disabled, there might not be a visual difference. In Eevee you will see huge difference in lighting and with no parametric light source there will be no shadows. This is because Cycles will sample every point in the sky as a "light source" and you will see shadows, while Eevee only approximates the lighting and uses the sky as a "irradiance map".</p>
+<h5 id="sun-disk">Sun Disk</h5>
+<ul>
+<li>Sun disk size in the sky is controlled by "Angular Diameter" parameter. It also changes the Sun Lamp Angle value for soft shadows. Larger the value, bigger the Sun disk, brighter it gets. </li>
+</ul>
+<p><strong><em>NOTE: Right now the Sun disk is a 2D circle with parametric apparent diameter, intensity is multiplied with a limb darkening factor. In future releases Sun will be calculated differently - as a real 3D sphere with actual physical diameter placed reeealy far away, but not at infinity, which will actually allow to travel to the Sun</em></strong></p>
+<ul>
+<li>"Temperature K" changes the color of the Sun disk. Bigger the value, bluer the Sun. In theory small Stars are hotter, thus bluer, and big stars colder - redder. I wanted to include the calculation of that, but it would remove artistic control, so left it as a manual variable.</li>
+</ul>
+<p><img alt="GUI_sun" src="../img/UI/Kelvins.jpeg" /></p>
+<p><strong><em>NOTE: In the future this will just be a RGB color picker instead</em></strong></p>
+<ul>
+<li>"Intensity" changes the Sun radiance intensity. In reality the value is much larger. I need more research in this matter.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../fog/" class="btn btn-neutral float-right" title="Fog">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../fog/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
