@@ -1,6 +1,6 @@
 site_name: starlightDocs
 theme: readthedocs
-
+site_url: http://starlight-manual.readthedocs.io/
 pages:
   - About: index.md
   - Features: features.md
