@@ -1,0 +1,16 @@
+site_name: starlightDocs
+theme: readthedocs
+
+pages:
+  - About: index.md
+  - Features: features.md
+  - Showcase: gallery.md
+  - Getting Started:
+    - Installation: installation.md
+    - User Interface: interface.md
+    - Fog: fog.md
+  - Support:
+    - Known Issues: issues.md
+    - FAQ: faq.md
+    - Contact: contact.md
+
