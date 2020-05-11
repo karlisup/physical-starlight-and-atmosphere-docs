@@ -2,10 +2,14 @@
 
 Once installation is complete, you are set! 
 
-- The "Physical Atmosphere" tab is now in the sidebar of Blender 3D viewport ("N" key)
+- By default the "Physical Atmosphere" tab is now in the sidebar of Blender 3D viewport ("N" key) and "World Properties" tab in Properties panel.
 Click on the "Physical Atmosphere" tab and you'll see this: 
 
 ![GUI](img/UI/UI_default.PNG)
+
+- If you want, you can disable the sidebar panel, or rename it to something shorter (or longer?)
+
+![GUI_enabled](img/UI/UI_toolbar.PNG)
 
 - Now enable it by ticking the uppermost checkbox "Atmosphere". To see the sky, you have to be in "Rendered" Viewport Shading mode (click on the 4th sphere in the list up in the right corner of 3D viewport)
 
@@ -17,11 +21,16 @@ Click on the "Physical Atmosphere" tab and you'll see this:
 - It replaced the default world shader node with "StarlightAtmosphere" node. When you grey out the "Atmosphere" checkbox, it will again set it back to default world.
 - It added a Sun lamp. The Sun lamp is used as the main light source to cast shadows from the Sun. When you grey out the "Atmosphere" checkbox, it will remove the Sun.
 
+### UI
+
 You are now greeted by this list of variables to play with. Take a deep breath and have a look at those. It has fancy names like Kelvins, radiance, and absorption, but I use those to somehow standartize the variables. Other softwares and scientific tools use similar naming. Also, few of these will be soon replaced with more artist-friendly variables.
 
-***TIP: hover your mouse cursor over the variables and press Delete to reset the value to its default***
 
 ![GUI_tools](img/UI/UI_tools.PNG)
+
+We have divided it into 5 sections - "Sun", "Atmosphere", "Stars", "Ground" and "Artistic Controls". You can hide each of them if you feel the view is getting cluttered. Also notice the "Reset" button after each section, it will reset the values to defaults.
+
+Now let's quickly go through each of those sections.
 
 ### Part 2: Sun
 
@@ -39,9 +48,7 @@ Sun is controlled by these 7 variables:
 
 #####Sun Position
 
-Sun position in the sky is controlled by the first two variables - Azimuth and Elevation. Azimuth moves the Sun horizontally, elevation - vertically. The values are angle in degrees. Default is 0.0 and 0.0 which puts the sun exactly at horizon in +Y direction. For now this is the only proper option how to change the Sun position. 
-
-***NOTE: in next releases it'll allow user to move the Sun lamp and thus change the shader parameters in two-way manner. Also I'll add the support for Sun-Position addon and***
+Sun position in the sky is controlled by the first two variables - Azimuth and Elevation. Azimuth moves the Sun horizontally, elevation - vertically. The values are angle in degrees. This is one of many ways you can control Sun position. You can move the Sun also by rotating the Sun object itself or use a SunPosition addon that comes with Blender. These two values are added for convenience if your scene is huge and you have lost the Sun object.
 
 #####Sun Visibility
 
@@ -69,6 +76,9 @@ If you compare Cycles renders with Sun Lamp enabled and Sun Lamp disabled, there
 
 ![GUI_sun](img/UI/Kelvins.jpeg)
 
-***NOTE: In the future this will just be a RGB color picker instead***
+- "Intensity" changes the Sun radiance intensity in Watt·sr/m2.
+Default value is 20.0 MegaWatt·sr/m2 (calculated by dividing solar constant with sun disk diameter in steridians)
 
-- "Intensity" changes the Sun radiance intensity. In reality the value is much larger. I need more research in this matter.
+***NOTE: In future I might add an option to use Lux values***
+
+### Part 3: Atmopshere

@@ -1,6 +1,8 @@
-## Requirements
+## v1.2 Requirements
 
-[Blender 2.8+](https://www.blender.org/)
+[Blender 2.81+](https://www.blender.org/)
+
+Physical Starlight and Atmosphere v1.2 will not work with Blender 2.80
 
 ---
 
@@ -10,7 +12,7 @@
 [Blendermarket](https://blendermarket.com/products/physical-starlight-and-atmosphere) or [Gumroad](https://gumroad.com/l/PSaA).
 
 
-**1. Download the "physicalStarlightAtmosphere.zip" file.**
+**1. Download the "physical-starlight-atmosphere-1.2.zip" file.**
 
 To make sure you have the latest .zip, check it here:
 [Blendermarket](https://www.blendermarket.com/account/orders) /
@@ -67,7 +69,7 @@ or
 
 >- Please remove the old addon folder before installing a new version. **(see 2b.)**
 
->- Do not try to install it on the Blender install directory itself. example - C:\ProgramFiles\Blender Foundation\Blender\2.80\scripts\addons - **NOT HERE (see 2b.)**
+>- Do not try to install it on the Blender install directory itself. example - C:\ProgramFiles\Blender Foundation\Blender\2.XX\scripts\addons - **NOT HERE (see 2b.)**
 
 >- On Macs, browser (or Finder?) sometimes automatically unzips .zip files. You need to install the .zip file!
 

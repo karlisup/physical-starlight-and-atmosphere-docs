@@ -1,22 +1,23 @@
-### How to add Fog?
+### How to add Fog to the materials?
 
-The "SkylightAtmosphere" is a universal node, it also works on object materials. All you need to do is to add the node group in your Object Shader Node tree just before the Material Output.
+Physical Starlight and Atmopshere not only influences the "sky" but also materials.
 
-***NOTE: right now adding the fog to your materials is completely manual. In next releases I'll automate the process of adding and removing the fog.***
+***NOTE: since version v1.2 fog addition is automated by a toggle button in UI***
 
-Here is how:
+Here is how to add fog to materials:
 
-- Select your object and material you would like to add the fog to. Open the Shader Node Editor.
-
-![FOG](img/fog/FOG_nofog.PNG)
-
-- Select Add/Group/StarlightAtmosphere and insert just before Material Output of your shader, like shown in the image. It will connect the "sockets" automatically.
+- When Physical Starlight and Atmopshere addon is enabled, navigate to "Ground" tab.
 
 ![FOG](img/fog/FOG_add_fog.PNG)
 
-- Now you have fog! Change the Atmosphere parameters to see the immediate results.
+- There is a "Toggle Material Fog" button, click it
 
-![FOG](img/fog/FOG_fog.PNG)
+![FOG](img/fog/FOG_add_fog_2.PNG)
+
+- Now you have fog! It will add fog to all existing materials ins scene, and also newly created ones.
+To remove the fog, click the button again. 
+
+![FOG](img/fog/FOG_add_fog_3.PNG)
 
 - "Atmosphere Density", "Distance Scalar" and "Falloff" has the most apparent impact on the fog.
 

@@ -1,12 +1,6 @@
-## Issues List
+## Issue Tracker
 
-- Blender crashes when rendering a video
-- renderfarm issues
-- invert absorption
-- move the Atmopshere from Sidebar to World tab
+To report a new issue, please use the Issue Tracker instead of messaging me directly. This assures that all issues are in one place and we can reply, sort and prioritize them so much more easily. Issue Tracker has a form to fill for your convenience.
 
-## Fixed Issues
+- [Issue Tracker](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues)
 
-- fogging does not work in Cycles. (fixed in v1.1)
-- reflections do not work in Eevee when using fog. (fixed in v1.1)
-- Sun radius work differently on Intel and Iris GPUs. Makes the sky completely white. (will be included in next release)

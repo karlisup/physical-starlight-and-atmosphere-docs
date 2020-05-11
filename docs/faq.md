@@ -1,1 +1,1 @@
-##Why is this a paid add-on?
+##Here will be FAQ
