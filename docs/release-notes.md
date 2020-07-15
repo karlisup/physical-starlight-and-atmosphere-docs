@@ -1,6 +1,6 @@
 ### Release Notes
 
-#### 1.2.2 - released 14.07.2020
+#### 1.2.2 - released 15.07.2020
 
 **new:**     
 
