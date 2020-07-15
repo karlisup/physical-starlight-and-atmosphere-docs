@@ -9,6 +9,7 @@ pages:
     - User Interface: interface.md
     - Fog: fog.md
   - Support:
+    - Release Notes: release-notes.md
     - Known Issues: issues.md
     - Contact: contact.md
 
