@@ -14,4 +14,11 @@ pages:
     - Frequently Asked Questions: faq.md
     - Known Issues: issues.md
     - Contact: contact.md
+plugins:
+  - redirects:
+    redirect_maps:
+      '/en/latest/': 'https://www.physicaladdons.com/psa'
+      '/en/1.2/': 'https://www.physicaladdons.com/psa'
+      '/en/1.1/': 'https://www.physicaladdons.com/psa'
+
 
