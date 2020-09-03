@@ -1,7 +1,7 @@
 site_name: starlightDocs
 theme: readthedocs
 site_url: http://starlight-manual.readthedocs.io/
-google_analytics: ['UA-86947939-2', 'mkdocs.org']
+google_analytics: ['UA-86947939-3', 'mkdocs.org']
 pages:
   - About: index.md
   - Features: features.md
