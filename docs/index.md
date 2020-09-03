@@ -1,3 +1,5 @@
+<meta http-equiv="refresh" content="0; URL=https://www.physicaladdons.com/psa/">
+
 ###What is Physical Starlight and Atmosphere
 
 "Physical Starlight and Atmosphere" is a Blender addon for advanced environmental lighting that takes inspiration of 'sandbox' game world and editors like Unity or Unreal Engine. The goal of the addon is to provide high quality atmospherics and lighting and bring visual consistency between every object in your scene. As of now it is still in active development and I am working hard to make it the highest quality product.
